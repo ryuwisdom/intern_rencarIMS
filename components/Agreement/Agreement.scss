@@ -1,0 +1,95 @@
+.agreement {
+  margin: 40px 0 0 15px;
+  object-fit: contain;
+  font-family: NotoSansCJKkr;
+  font-size: 14px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.43;
+  letter-spacing: normal;
+  text-align: left;
+  color: #282828;
+}
+
+.container {
+  display: inline-flex;
+  position: relative;
+  padding-left: 35px;
+  margin: 10px 0 10px 30px;
+  cursor: pointer;
+  font-size: 15px;
+  border: 1px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+
+  &:hover input ~ .checkmark {
+    background-color: #bdbdbd;
+  }
+
+  input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+    &:checked ~ .checkmark {
+      display: block;
+      background-color: #1877f2;
+      z-index: 10;
+    }
+    &:checked ~ .checkmark::after {
+      display: block;
+      background-color: #1877f2;
+      z-index: 10;
+    }
+  }
+  .ic_arrow_right_terms {
+    position: absolute;
+    width: 6px;
+    height: 10px;
+    left: 320px;
+    margin-top: 7px;
+    object-fit: contain;
+  }
+}
+
+.checkmark{
+  &::before {
+    position: absolute;
+    content: '';
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-radius: 50%;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #bdbdbd;
+    border-radius: 50%;
+    &::after {
+      content: "";
+      position: absolute;
+  }
+}
+
+
+.border {
+  width: 344px;
+  height: 1px;
+  margin: 0 auto;
+  margin-top: 10px;
+  object-fit: contain;
+  background-color: #e5e5e5;
+}

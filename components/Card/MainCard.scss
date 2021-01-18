@@ -1,0 +1,144 @@
+html {
+  height: 100vh;
+}
+.call_container {
+  display: flex;
+  width: 345px;
+  height: auto;
+  margin: 10px auto;
+  padding: 11px 0 11px 11px;
+  border-radius: 15px;
+  box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.08);
+  background-color: #ffffff;
+  cursor: pointer;
+
+  .wrap {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    .number {
+      object-fit: contain;
+      font-family: NotoSansCJKkr;
+      font-size: 13px;
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.46;
+      letter-spacing: normal;
+      text-align: left;
+      color: #bdbdbd;
+      padding-right: 20px;
+    }
+  }
+  .suggestion_container {
+    width: 78px;
+    height: 110px;
+    padding: 10px;
+    margin-right: 15px;
+    border-radius: 15px;
+    background-color: #f6f6f6;
+
+    .suggestion {
+      width: 100%;
+      height: 18px;
+      // background-color: lightgray;
+      font-family: NotoSansCJKkr;
+      font-size: 12px;
+      line-height: 1.25;
+      display: flex;
+      justify-content: center;
+      margin-top: 5px;
+      color: #282828;
+    }
+
+    .count {
+      width: 18px;
+      height: 45px;
+      margin: 0 auto;
+      margin-top: 25px;
+      display: flex;
+      justify-content: center;
+      font-size: 30px;
+      font-weight: bold;
+      line-height: 0.55;
+      color: #282828;
+    }
+  }
+  .main_card_row {
+    margin-bottom: 10px;
+  }
+  .company_suggestion {
+    width: 87px;
+    height: 24px;
+    border-radius: 15px;
+    font-size: 13px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+    color: #ffffff;
+    background-color: #1877f2;
+  }
+
+  .customer_car_type_text {
+    width: 63px;
+    height: 19px;
+    // margin: 10px;
+    margin: 10px 14px 10px 0;
+    object-fit: contain;
+    line-height: 1.46;
+    font-size: 12px;
+    color: #bdbdbd;
+  }
+
+  .customer_car_type {
+    width: 63px;
+    height: 19px;
+    margin: 10px 14px 10px 0;
+    object-fit: contain;
+    font-size: 12px;
+    font-weight: bold;
+    color: #282828;
+  }
+
+  .customer_car_number_text {
+    width: 63px;
+    height: 19px;
+    margin: 10px 14px 10px 0;
+    object-fit: contain;
+    font-size: 12px;
+    color: #bdbdbd;
+  }
+
+  .customer_car_number {
+    width: 63px;
+    height: 19px;
+    margin-bottom: 6px;
+    object-fit: contain;
+    font-size: 12px;
+    color: #282828;
+  }
+
+  .customer_call_date_text {
+    width: 22px;
+    margin: 10px 22px 10px 0;
+    object-fit: contain;
+    font-size: 12px;
+    color: #bdbdbd;
+  }
+
+  .customer_call_date {
+    width: 63px;
+    height: 19px;
+    object-fit: contain;
+    font-size: 12px;
+    color: #282828;
+  }
+
+  &:first-child {
+    margin-top: 120px;
+  }
+  &:last-child {
+    margin-bottom: 90px;
+  }
+}

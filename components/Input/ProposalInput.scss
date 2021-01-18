@@ -1,0 +1,26 @@
+@import '../../styles/globals.scss';
+.proposal_inputSide {
+  display: flex;
+  padding: 15px;
+  .suggestionCompany {
+    @include flexCenter();
+    border-bottom: 1px solid;
+    border-color: rgba($color: #bdbdbd, $alpha: 0.2);
+    input {
+      width: 130px;
+      height: 25px;
+      background-color: transparent;
+      font-family: NotoSansCJKkr;
+      font-size: 14px;
+      // color: #bdbdbd;
+      color: #282828;
+      &::placeholder {
+        color: rgba($color: #bdbdbd, $alpha: 0.5);
+      }
+    }
+    .input_button {
+      height: 8px;
+      display: flex;
+    }
+  }
+}
